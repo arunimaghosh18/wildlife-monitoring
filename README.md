@@ -27,14 +27,49 @@ Ensure you have the necessary dependencies installed:
 ```bash
 pip install pyspark
 ```
+
+---
+
 ### 2️⃣ Preprocessing
 Run the preprocessing script to prepare the dataset:
 ```bash
 python wildlife_monitoring.py
 ```
-Output generated at:
+
+---
+
+###3️⃣ Run K-Means Clustering
+Choose the appropriate clustering method:
+Grouped Clusters:
 ```bash
-dataset/output.csv/part-00000-f8f7d0bc-a5bc-40e3-a806-dc5dfb385e15-c000.csv
+python kmeans.py
 ```
 
+Individual Species Clustering:
+```bash
+python kmeans_specieswise.py
+```
+
+---
+
+###4️⃣ Run Decision Tree Model
+Run the Decision Tree script for habitat suitability prediction:
+```bash
+python tree.py
+```
+
+---
+
+###5️⃣ Visualization
+Use Tableau for visualization:
+
+First Visualization: 📌 Plots all species on a map based on clusters. Filters can be applied by cluster number and species name.
+Second Visualization: 📌 Plots suitable habitat (coordinates) for each species based on maximum count.
+
+
+---
+
+###Notes
+Ensure Tableau is installed to visualize the processed data.
+Use the generated CSV files to create maps for better insights into species distribution and conservation strategies.
 
