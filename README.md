@@ -26,5 +26,15 @@ This project leverages **big data and machine learning** to analyze species dist
 Ensure you have the necessary dependencies installed:
 ```bash
 pip install pyspark
-
+```
 ### 2️⃣ Preprocessing
+Run the preprocessing script to prepare the dataset:
+```bash
+python wildlife_monitoring.py
+```
+Output generated at:
+```bash
+dataset/output.csv/part-00000-f8f7d0bc-a5bc-40e3-a806-dc5dfb385e15-c000.csv
+```
+
+
