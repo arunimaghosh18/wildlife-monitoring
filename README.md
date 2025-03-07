@@ -40,6 +40,7 @@ python wildlife_monitoring.py
 
 ###3️⃣ Run K-Means Clustering
 Choose the appropriate clustering method:
+
 Grouped Clusters:
 ```bash
 python kmeans.py
